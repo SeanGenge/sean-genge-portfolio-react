@@ -13,8 +13,8 @@ function ProjectCard({ project }) {
 				<Card.Text>
 					{project.description}
 				</Card.Text>
-				<Card.Text><a href={project.github} target="blank"><i className="fa fa-brands fa-github github-icon"></i></a></Card.Text>
-				<Card.Text><a href={project.github} target="blank"><i class="fa-solid fa-tablet-screen-button"></i></a></Card.Text>
+				<Card.Text><a href={project.github} target="blank"><i className="fa fa-brands fa-github github-icon"></i> Github</a></Card.Text>
+				<Card.Text><a href={project.deployed} target="blank"><i class="fa fa-solid fa-window-restore deployed-icon"></i> Deployed</a></Card.Text>
 			</Card.ImgOverlay>
 		</Card>
 	);
