@@ -18,7 +18,9 @@ function Portfolio() {
 	return (
 		<Container>
 			<Row>
-				<Col>Portfolio</Col>
+				<Col>
+					<h1 className="title">Portfolio</h1>
+				</Col>
 			</Row>
 			<Row>
 				{renderProjects()}

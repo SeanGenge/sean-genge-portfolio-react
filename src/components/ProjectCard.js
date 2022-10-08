@@ -1,18 +1,20 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-import '../css/projectCard.css';
+import '../css/projectCard.scss';
 
-function ProjectCard() {
+function ProjectCard({ project }) {
+	let imagePath = "/images/projects/";
+	
 	return (
 		<Card className="bg-dark text-white project-card">
-			<Card.Img src="holder.js/100px270" alt="Card image" />
-			<Card.ImgOverlay>
-				<Card.Title>Card title</Card.Title>
+			<Card.Img className="project-card__image" src={imagePath + project.image} alt={project.image} />
+			<Card.ImgOverlay className="project-card__overlay">
+				<Card.Title className="project-card__overlay-title blue-colour">{project.name}</Card.Title>
 				<Card.Text>
-					This is a wider card with supporting text below as a natural lead-in
-					to additional content. This content is a little bit longer.
+					{project.description}
 				</Card.Text>
-				<Card.Text>Last updated 3 mins ago</Card.Text>
+				<Card.Text><a href={project.github} target="blank"><i className="fa fa-brands fa-github github-icon"></i></a></Card.Text>
+				<Card.Text><a href={project.github} target="blank"><i class="fa-solid fa-tablet-screen-button"></i></a></Card.Text>
 			</Card.ImgOverlay>
 		</Card>
 	);

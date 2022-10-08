@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.min.css';  
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import './css/global.scss';
 
 // In this project I am using react-bootstrap: 
 // - https://www.npmjs.com/package/react-bootstrap
