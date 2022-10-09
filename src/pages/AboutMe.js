@@ -13,7 +13,7 @@ function AboutMe() {
 			</Row>
 			<Row>
 				
-				<Col>
+				<Col className="custom-container">
 					<p className="info">
 						Hi, I'm Sean. I enjoy programming and puzzles. With a computer science background, I have dabbled with lots of different programming lanugages. These range from C, Java, Python and C#. Later I came to learn web development and fell in love with it.
 					</p>

@@ -1,6 +1,13 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 .title {
 	text-align: center;
 	font-size: 48px;
+	font-family: 'Silkscreen', cursive;
+	margin-top: 25px;
+	margin-bottom: 50px;
 }
 
 .blue-colour {
@@ -9,4 +16,17 @@
 
 a {
 	text-decoration: none;
+	--bs-navbar-active-color: #1F51FF !important;
+}
+
+nav {
+	font-family: 'Silkscreen', cursive;
+}
+
+.navbar-brand {
+	font-size: 32px;
+}
+
+.custom-container {
+	margin: 0 100px;
 }
