@@ -4,6 +4,7 @@ import TopNavigation from './components/TopNavigation';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import ContactMe from './pages/ContactMe';
+import Footer from './components/Footer';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -24,8 +25,11 @@ function App() {
   
   return (
     <>
-      <TopNavigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <div className="main-container">
+        <TopNavigation currentPage={currentPage} handlePageChange={handlePageChange} />
+        {renderPage()}
+      </div>
+      <Footer />
     </>
   );
 }
