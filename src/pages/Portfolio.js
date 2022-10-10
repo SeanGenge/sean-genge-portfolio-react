@@ -1,5 +1,4 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import projects from '../projects.json';
@@ -16,16 +15,9 @@ function Portfolio() {
 	};
 	
 	return (
-		<Container>
-			<Row>
-				<Col>
-					<h1 className="title">Portfolio</h1>
-				</Col>
-			</Row>
-			<Row>
-				{renderProjects()}
-			</Row>
-		</Container>
+		<Row>
+			{renderProjects()}
+		</Row>
 	);
 }
 

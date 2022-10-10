@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -49,43 +48,36 @@ function ContactMe() {
 	};
 	
 	return (
-		<Container>
-			<Row>
-				<Col>
-					<h1 className="title">Contact Me</h1>
-				</Col>
-			</Row>
-			<Row>
-				<Col className="custom-container">
-					<Form id="contact-form" noValidate onSubmit={handleFormSubmit}>
-						<Form.Group className="mb-3" controlId="formName">
-							<Form.Label>Name*</Form.Label>
-							<Form.Control type="text" name="formName" placeholder="Enter name" onChange={handleInputChange} isValid={isValidName} isInvalid={!isValidName} />
-							<Form.Control.Feedback type="invalid">
-								Please enter a name
-							</Form.Control.Feedback>
-						</Form.Group>
-						<Form.Group className="mb-3" controlId="formEmail">
-							<Form.Label>Email address*</Form.Label>
-							<Form.Control type="email" name="formEmail" placeholder="Enter email" onChange={handleInputChange} isValid={isValidEmail} isInvalid={!isValidEmail} />
-							<Form.Control.Feedback type="invalid">
-								Please enter a valid email
-							</Form.Control.Feedback>
-						</Form.Group>
-						<Form.Group className="mb-3" controlId="formMessage">
-							<Form.Label>Message*</Form.Label>
-							<Form.Control as="textarea" name="formMessage" rows={4} onChange={handleInputChange} isValid={isValidMessage} isInvalid={!isValidMessage} />
-							<Form.Control.Feedback type="invalid">
-								Please enter a message
-							</Form.Control.Feedback>
-						</Form.Group>
-						<Button variant="primary" type="submit">
-							Send message
-						</Button>
-					</Form>
-				</Col>
-			</Row>
-		</Container>
+		<Row>
+			<Col className="custom-container">
+				<Form id="contact-form" noValidate onSubmit={handleFormSubmit}>
+					<Form.Group className="mb-3" controlId="formName">
+						<Form.Label>Name*</Form.Label>
+						<Form.Control type="text" name="formName" placeholder="Enter name" onChange={handleInputChange} isValid={isValidName} isInvalid={!isValidName} />
+						<Form.Control.Feedback type="invalid">
+							Please enter a name
+						</Form.Control.Feedback>
+					</Form.Group>
+					<Form.Group className="mb-3" controlId="formEmail">
+						<Form.Label>Email address*</Form.Label>
+						<Form.Control type="email" name="formEmail" placeholder="Enter email" onChange={handleInputChange} isValid={isValidEmail} isInvalid={!isValidEmail} />
+						<Form.Control.Feedback type="invalid">
+							Please enter a valid email
+						</Form.Control.Feedback>
+					</Form.Group>
+					<Form.Group className="mb-3" controlId="formMessage">
+						<Form.Label>Message*</Form.Label>
+						<Form.Control as="textarea" name="formMessage" rows={4} onChange={handleInputChange} isValid={isValidMessage} isInvalid={!isValidMessage} />
+						<Form.Control.Feedback type="invalid">
+							Please enter a message
+						</Form.Control.Feedback>
+					</Form.Group>
+					<Button variant="primary" type="submit">
+						Send message
+					</Button>
+				</Form>
+			</Col>
+		</Row>
 	);
 }
 
