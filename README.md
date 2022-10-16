@@ -2,6 +2,7 @@
 
 ## Description
 My portfolio created with create-react-app
+Deployed: https://sean-genge-portfolio-react.herokuapp.com
 
 Languages/tools:
 
