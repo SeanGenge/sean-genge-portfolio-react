@@ -1,15 +1,18 @@
+import React from 'react';
 import '../css/App.css';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
+import ProjectsGrid from './components/ProjectsGrid';
+import Footer from './components/Footer';
 
 function App() {
 	return (
-		<div className="App">
+		<React.Fragment>
 			<Hero />
 			<AboutMe />
-			<Projects />
-		</div>
+			<ProjectsGrid />
+			<Footer />
+		</React.Fragment>
 	);
 }
 
