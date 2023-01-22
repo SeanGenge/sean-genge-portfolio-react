@@ -1,4 +1,4 @@
-const projectList = [
+const projectData = [
 	// {
 	//     "name": "Wolfies",
 	//     "description": "View/search movie information",
@@ -14,7 +14,7 @@ const projectList = [
 		"github": "https://github.com/rschragger/Farmers-Market-Organiser",
 		"deployed": "https://farmers-market-organiser-app.herokuapp.com/",
 		"primaryLanguages": ["JavaScript", "express", "handlebar.js"],
-		"secondaryLanguages": ["HTML", "CSS", "Moment.js", "Bootstrap", "Multer", "validator.js", "heroku"]
+		"secondaryLanguages": ["HTML", "CSS", "Moment.js", "Bootstrap", "Multer", "validator.js", "heroku", "Node.js"]
 	},
 	{
 		"name": "Github Readme Generator",
@@ -23,7 +23,7 @@ const projectList = [
 		"github": "https://github.com/SeanGenge/Github-Readme-Generator",
 		"deployed": "https://generate-github-readme.herokuapp.com/",
 		"primaryLanguages": ["JavaScript", "express", "handlebar.js"],
-		"secondaryLanguages": ["Heroku", "Handlebar.js", "HTML", "CSS"]
+		"secondaryLanguages": ["Heroku", "Handlebar.js", "HTML", "CSS", "Node.js"]
 	},
 	{
 		"name": "m&mDB (Movies and music db)",
@@ -50,7 +50,7 @@ const projectList = [
 		"github": "https://github.com/SeanGenge/Note-taker",
 		"deployed": "https://sean-note-taker.herokuapp.com/notes",
 		"primaryLanguages": ["JavaScript", "express", "Heroku"],
-		"secondaryLanguages": ["HTML", "CSS"]
+		"secondaryLanguages": ["HTML", "CSS", "Node.js"]
 	},
 	{
 		"name": "Fill",
@@ -71,4 +71,4 @@ const projectList = [
 	// }
 ];
 
-export default projectList;
+export default projectData;

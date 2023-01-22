@@ -4,15 +4,18 @@ import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
 import ProjectsGrid from './components/ProjectsGrid';
 import Footer from './components/Footer';
+import { ThemeProvider } from '@mui/material/styles';
+import { currTheme } from './theme';
+
 
 function App() {
 	return (
-		<React.Fragment>
+		<ThemeProvider theme={currTheme}>
 			<Hero />
 			<AboutMe />
 			<ProjectsGrid />
 			<Footer />
-		</React.Fragment>
+		</ThemeProvider>
 	);
 }
 
