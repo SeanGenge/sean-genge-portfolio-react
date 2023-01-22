@@ -1,12 +1,12 @@
 import React from "react";
-import { Card, CardActions, CardContent, CardMedia, Button, Typography, Skeleton, Link, Stack, Chip } from '@mui/material';
+import { Card, CardActions, CardContent, CardMedia, Button, Typography, Skeleton, Link, Chip } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
 function ProjectCard({ project, imageData }) {
 	const image = imageData ?? "";
-	const languages = project.languages.map((language, id) => {
+	const primaryLanguages = project.primaryLanguages.map((language, id) => {
 		return (
 			<Grid2 key={id} sx={{marginRight: '.5em'}}>
 				<Chip label={language} variant="outlined" />
@@ -15,7 +15,7 @@ function ProjectCard({ project, imageData }) {
 	});
 	
 	const cardWidth = 35;
-	const cardHeight = 37;
+	const cardHeight = 30;
 	const cardMediaHeight = 15;
 	// 5 is how much room you want left over at the bottom of the card
 	const cardContentHeight = cardHeight - cardMediaHeight - 5;
@@ -41,20 +41,16 @@ function ProjectCard({ project, imageData }) {
 					{project.description}
 				</Typography>
 				<Grid2 container rowSpacing={2} sx={{marginTop: '1em'}}>
-					{languages}
+					{primaryLanguages}
 				</Grid2>
 			</CardContent>
 			<CardActions>
-				<Link href={project.github} underline="none" target="_blank">
-					<Button size="small" startIcon={<GitHubIcon />}>
-						Github
-					</Button>
-				</Link>
-				<Link href={project.deployed} underline="none" target="_blank">
-					<Button size="small" startIcon={<OpenInBrowserIcon />}>
-						View Website
-					</Button>
-				</Link>
+				<Button size="small" startIcon={<GitHubIcon />} href={project.github} underline="none" target="_blank" component={Link}>
+					Github
+				</Button>
+				<Button size="small" startIcon={<OpenInBrowserIcon />} href={project.deployed} underline="none" target="_blank" component={Link}>
+					View Website
+				</Button>
 			</CardActions>
 		</Card>
 	);

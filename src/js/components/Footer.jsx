@@ -8,21 +8,21 @@ function Footer() {
 	const iconSize = 2.5;
 	
 	return (
-		<Box className="separator-box" marginTop="10em" height="5rem">
-			<Container sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+		<Box className="separator-box" height="5rem" marginTop="5em">
+			<Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
 				<Typography variant="body1" paragraph>
-					<Link href="https://github.com/SeanGenge" target="_blank">
+					<Link href="https://github.com/SeanGenge" target="_blank" underline="none">
 						<GitHubIcon sx={{ verticalAlign: "middle", fontSize: `${iconSize}rem` }} />
 					</Link>
-					<Link href="https://www.linkedin.com/in/seangenge/" target="_blank">
+					<Link href="https://www.linkedin.com/in/seangenge/" target="_blank" underline="none">
 						<LinkedInIcon sx={{ verticalAlign: "middle", fontSize: `${iconSize}rem` }} />
 					</Link>
 				</Typography>
 				<Typography variant="body1" paragraph>
-					Coded and designed by me <CopyrightIcon sx={{verticalAlign: "middle"}} /> 2023
+					Handcrafted by me using React and hosted using AWS.
 				</Typography>
 				<Typography variant="body1" paragraph>
-					Open source. View code <Link href="https://github.com/SeanGenge/sean-genge-portfolio-react" target="_blank" underline="none">Here</Link>
+					You can view my portfolio code <Link href="https://github.com/SeanGenge/sean-genge-portfolio-react" target="_blank" underline="none">here</Link> <CopyrightIcon sx={{ verticalAlign: "middle" }} /> 2023
 				</Typography>
 			</Container>
 		</Box>

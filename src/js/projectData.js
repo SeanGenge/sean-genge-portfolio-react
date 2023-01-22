@@ -5,7 +5,7 @@ const projectList = [
 	//     "image": "Wolfies.png",
 	//     "github": "https://github.com/SeanGenge/Wolfies",
 	//     "deployed": null,
-	//     "languages": ["React", "JavaScript", "TheMovieDB API", "HTML", "CSS", "Bootstrap", "SCSS", "Node.js"]
+	//     "secondaryLanguages": ["React", "JavaScript", "TheMovieDB API", "HTML", "CSS", "Bootstrap", "SCSS", "Node.js"]
 	// },
 	{
 		"name": "Farmers Market Organisator",
@@ -13,7 +13,8 @@ const projectList = [
 		"image": "farmersMarketOrganiser.png",
 		"github": "https://github.com/rschragger/Farmers-Market-Organiser",
 		"deployed": "https://farmers-market-organiser-app.herokuapp.com/",
-		"languages": ["HTML", "JavaScript", "CSS", "Moment.js", "Bootstrap", "express", "Multer", "validator.js"]
+		"primaryLanguages": ["JavaScript", "express", "handlebar.js"],
+		"secondaryLanguages": ["HTML", "CSS", "Moment.js", "Bootstrap", "Multer", "validator.js", "heroku"]
 	},
 	{
 		"name": "Github Readme Generator",
@@ -21,7 +22,8 @@ const projectList = [
 		"image": "readmeGenerator.png",
 		"github": "https://github.com/SeanGenge/Github-Readme-Generator",
 		"deployed": "https://generate-github-readme.herokuapp.com/",
-		"languages": ["JavaScript", "Heroku", "Handlebar.js", "HTML", "CSS", "express"]
+		"primaryLanguages": ["JavaScript", "express", "handlebar.js"],
+		"secondaryLanguages": ["Heroku", "Handlebar.js", "HTML", "CSS"]
 	},
 	{
 		"name": "m&mDB (Movies and music db)",
@@ -29,7 +31,8 @@ const projectList = [
 		"image": "m_mDB.png",
 		"github": "https://github.com/SeanGenge/m-mDB",
 		"deployed": "https://seangenge.github.io/m-mDB/",
-		"languages": ["JavaScript", "TheMovieDB API", "TheAudioDB API", "HTML", "CSS", "MaterializeCSS"]
+		"primaryLanguages": ["JavaScript", "TheMovieDB API"],
+		"secondaryLanguages": ["HTML", "CSS", "MaterializeCSS", "TheAudioDB API"]
 	},
 	{
 		"name": "Weather App",
@@ -37,7 +40,8 @@ const projectList = [
 		"image": "Weather.png",
 		"github": "https://github.com/SeanGenge/Weather",
 		"deployed": "https://seangenge.github.io/Weather/",
-		"languages": ["HTML", "JavaScript", "Weather API", "CSS", "Bootstrap"]
+		"primaryLanguages": ["JavaScript", "Bootstrap", "Weather API"],
+		"secondaryLanguages": ["HTML", "CSS"]
 	},
 	{
 		"name": "Note taker",
@@ -45,7 +49,8 @@ const projectList = [
 		"image": "noteTaker.png",
 		"github": "https://github.com/SeanGenge/Note-taker",
 		"deployed": "https://sean-note-taker.herokuapp.com/notes",
-		"languages": ["JavaScript", "HTML", "CSS", "Heroku", "express"]
+		"primaryLanguages": ["JavaScript", "express", "Heroku"],
+		"secondaryLanguages": ["HTML", "CSS"]
 	},
 	{
 		"name": "Fill",
@@ -53,7 +58,8 @@ const projectList = [
 		"image": "Fill.png",
 		"github": "https://github.com/SeanGenge/Fill",
 		"deployed": "https://seangenge.github.io/Fill/",
-		"languages": ["React", "JavaScript", "HTML", "Babel", "Webpack", "CSS", "Node.js"]
+		"primaryLanguages": ["React", "JavaScript", "Node.js"],
+		"secondaryLanguages": ["HTML", "Babel", "Webpack", "CSS"]
 	},
 	// {
 	//     "name": "Work day scheduler",
@@ -61,7 +67,7 @@ const projectList = [
 	//     "image": "WorkDayScheduler.png",
 	//     "github": "https://github.com/SeanGenge/Work-day-scheduler",
 	//     "deployed": "https://seangenge.github.io/Work-day-scheduler/",
-	//     "languages": ["HTML", "JavaScript", "CSS", "Moment.js", "Bootstrap"]
+	//     "secondaryLanguages": ["HTML", "JavaScript", "CSS", "Moment.js", "Bootstrap"]
 	// }
 ];
 
