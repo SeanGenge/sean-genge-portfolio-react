@@ -17,13 +17,13 @@ function ProjectCard({ project, imageData }) {
 	});
 	
 	const cardWidth = 35;
-	const cardHeight = 30;
+	const cardHeight = 35;
 	const cardMediaHeight = 15;
 	// 5 is how much room you want left over at the bottom of the card
 	const cardContentHeight = cardHeight - cardMediaHeight - 5;
 	
 	return (
-		<Card className="rounded" sx={{ width: `${cardWidth}rem}`, height: `${cardHeight}rem`, marginTop: '1em', marginBottom: '1em', marginLeft: '2em', marginRight: '2em' }}>
+		<Card className="rounded" sx={{ position: 'relative', width: `${cardWidth}rem}`, minHeight: `${cardHeight}rem`, marginTop: '1em', marginBottom: '1em', marginLeft: '2em', marginRight: '2em' }}>
 			{
 				image ?
 					<CardMedia
@@ -36,13 +36,13 @@ function ProjectCard({ project, imageData }) {
 			}
 			<CardContent
 				sx={{ height: `${cardContentHeight}rem` }}>
-				<Typography gutterBottom variant="h5" component="div">
+				<Typography gutterBottom variant="h6" component="div" sx={{minHeight: '70px'}}>
 					{project.name}
 				</Typography>
 				<Typography variant="body2" color="text.secondary">
 					{project.description}
 				</Typography>
-				<Grid2 container rowSpacing={2} sx={{ marginTop: '1em' }}>
+				<Grid2 container rowSpacing={2} sx={{ position: 'absolute', bottom: '60px' }}>
 					{primaryLanguages}
 				</Grid2>
 			</CardContent>

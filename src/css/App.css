@@ -1,5 +1,7 @@
 :root {
-	--primary-colour: #1134A6;
+	--primary-colour-list: 17, 52, 166;
+	--primary-colour: rgb(var(--primary-colour-list));
+	--box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
 }
 
 body, html {
@@ -50,4 +52,16 @@ body, html {
 
 .rounded {
 	border-radius: 15px !important;
+}
+
+.MuiCard-root {
+	box-shadow: var(--box-shadow) !important;
+}
+
+.MuiCardMedia-root {
+	box-shadow: var(--box-shadow);
+}
+
+.MuiCardActions-root {
+	box-shadow: var(--box-shadow);
 }

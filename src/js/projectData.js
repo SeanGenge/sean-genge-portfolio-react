@@ -26,7 +26,7 @@ const projectData = [
 		"secondaryLanguages": ["Heroku", "Handlebar.js", "HTML", "CSS", "Node.js"]
 	},
 	{
-		"name": "m&mDB (Movies and music db)",
+		"name": "Movies and music db",
 		"description": "View/search movie and album information",
 		"image": "m_mDB.png",
 		"github": "https://github.com/SeanGenge/m-mDB",

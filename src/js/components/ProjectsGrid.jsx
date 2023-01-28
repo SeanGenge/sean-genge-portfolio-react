@@ -38,7 +38,7 @@ function ProjectsGrid() {
 	
 	return (
 		<Box textAlign="center" marginTop="5em">
-			<Typography variant="h3" sx={{marginBottom: "1em"}}>My Projects</Typography>
+			<Typography variant="h3" sx={{marginBottom: "1em"}}>Some of my projects</Typography>
 			<ToggleButtonGroup
 				color="primary"
 				value={currFilter}

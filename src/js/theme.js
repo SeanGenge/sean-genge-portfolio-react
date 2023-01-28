@@ -11,39 +11,39 @@ export const currTheme = createTheme({
 		}
 	},
 	typography: {
-		fontFamily: 'Archivo, Open Sans',
+		fontFamily: 'Open Sans, Roboto',
 		h1: {
-			fontFamily: 'Archivo',
+			fontFamily: 'Open Sans',
 		},
 		h2: {
-			fontFamily: 'Archivo',
+			fontFamily: 'Open Sans',
 		},
 		h3: {
-			fontFamily: 'Archivo',
+			fontFamily: 'Open Sans',
 		},
 		h4: {
-			fontFamily: 'Archivo',
+			fontFamily: 'Open Sans',
 		},
 		h5: {
-			fontFamily: 'Archivo',
+			fontFamily: 'Open Sans',
 		},
 		h6: {
-			fontFamily: 'Archivo',
+			fontFamily: 'Open Sans',
 		},
 		subtitle1: {
-			fontFamily: 'Open Sans',
+			fontFamily: 'Roboto',
 		},
 		subtitle2: {
-			fontFamily: 'Open Sans',
+			fontFamily: 'Roboto',
 		},
 		body2: {
-			fontFamily: 'Open Sans',
+			fontFamily: 'Roboto',
 		},
 		caption: {
-			fontFamily: 'Open Sans',
+			fontFamily: 'Roboto',
 		},
 		overline: {
-			fontFamily: 'Open Sans',
+			fontFamily: 'Roboto',
 		},
 	},
 });
