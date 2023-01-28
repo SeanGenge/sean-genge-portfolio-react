@@ -65,3 +65,72 @@ body, html {
 .MuiCardActions-root {
 	box-shadow: var(--box-shadow);
 }
+
+.hidden {
+	opacity: 0;
+	filter: blur(3px);
+	transform: translateY(50%);
+	transition: all .7s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateY(0);
+}
+
+.hidden:nth-child(2) {
+	transition-delay: 200ms;
+}
+
+.hidden:nth-child(3) {
+	transition-delay: 400ms;
+}
+
+.hidden:nth-child(4) {
+	transition-delay: 150ms;
+}
+
+.hidden:nth-child(5) {
+	transition-delay: 350ms;
+}
+
+.hidden:nth-child(6) {
+	transition-delay: 550ms;
+}
+
+@media(prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(100%)
+	}
+
+	100% {
+		transform: translateY(0%)
+	}
+}

@@ -24,7 +24,7 @@ function Footer() {
 					</Link>
 				</Typography>
 				<Typography variant="body1" paragraph>
-					Handcrafted by me using React and hosted using AWS.
+					Handcrafted by me using React. Hosted using AWS
 				</Typography>
 				<Typography variant="body1" paragraph>
 					You can view my portfolio code <Link href="https://github.com/SeanGenge/sean-genge-portfolio-react" target="_blank" underline="none">here</Link> <CopyrightIcon sx={{ verticalAlign: "middle" }} /> 2023

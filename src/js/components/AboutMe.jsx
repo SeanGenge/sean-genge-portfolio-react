@@ -8,9 +8,9 @@ function AboutMe() {
 			<Container>
 				<Grid2 container>
 					<Grid2 xs={12} sm={4}>
-						<img className="pfp" src="/images/pfp.jpg" alt="Sean Genge" />
+						<img className="pfp hidden" src="/images/pfp.jpg" alt="Sean Genge" />
 					</Grid2>
-					<Grid2 xs={12} sm={6}>
+					<Grid2 xs={12} sm={6} className="hidden">
 						<Typography variant="h5" paragraph>
 							Hi, I'm Sean. Nice to meet you
 						</Typography>

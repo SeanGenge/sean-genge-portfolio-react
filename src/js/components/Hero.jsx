@@ -7,12 +7,12 @@ function Hero() {
 		<section id="hero">
 			<Grid2 container rowSpacing={2} className="no-margin">
 				<Grid2 xs={12}>
-					<Typography variant="h1" paragraph>
+					<Typography variant="h1" className="hidden" paragraph>
 						Sean Genge
 					</Typography>
 				</Grid2>
 				<Grid2 xs={12}>
-					<Typography variant="h4" paragraph>
+					<Typography variant="h4" className="hidden" paragraph>
 						A Full Stack Developer
 					</Typography>
 				</Grid2>

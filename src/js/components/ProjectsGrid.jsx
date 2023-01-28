@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
-import { importAll } from '../util/images';
+import { importImages, observeAnimateOnScroll } from '../util/util';
 import projectData from '../projectData.js';
 import { Box, Typography, Container, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
@@ -10,16 +10,23 @@ function ProjectsGrid() {
 	const [currFilter, setCurrFilter] = useState("All");
 	const [projectCards, setProjectCards] = useState([]);
 	const [filteredProjects, setFilteredProjects] = useState([]);
+	const [firstLoad, setFirstLoad] = useState(true);
 	
 	useEffect(() => {
-		setImages(importAll(require.context('../../../public/images/projects', false, /\.(png|jpe?g|svg)$/)));
-		setFilteredProjects(projectData)
+		setImages(importImages(require.context('../../../public/images/projects', false, /\.(png|jpe?g|svg)$/)));
+		setFilteredProjects(projectData);
 	}, []);
+	
+	useEffect(() => {
+		const cards = document.querySelectorAll(".project-card");
+		
+		cards.forEach((el) => observeAnimateOnScroll.observe(el));
+	}, [projectCards]);
 	
 	useEffect(() => {
 		const tmpProjectCards = filteredProjects.map((project, id) => {
 			return (
-				<Grid2 xs={12} md={4} key={id}>
+				<Grid2 className={"project-card " + (firstLoad ? "hidden" : "")} xs={12} md={4} key={id}>
 					<Box display="flex" justifyContent="center" padding="1em">
 						<ProjectCard project={project} imageData={images[project.image]} />
 					</Box>
@@ -28,23 +35,26 @@ function ProjectsGrid() {
 		});
 		
 		setProjectCards(tmpProjectCards);
-	}, [images, filteredProjects]);
+	}, [images, filteredProjects, currFilter, firstLoad]);
 	
 	const handleChange = (event, newFilter) => {
 		setCurrFilter(newFilter);
 		
 		setFilteredProjects(projectData.filter(project => project.primaryLanguages.includes(newFilter) || project.secondaryLanguages.includes(newFilter) || newFilter === "All"));
+		
+		setFirstLoad(false);
 	};
 	
 	return (
 		<Box textAlign="center" marginTop="5em">
-			<Typography variant="h3" sx={{marginBottom: "1em"}}>Some of my projects</Typography>
+			<Typography variant="h3" className="hidden" sx={{marginBottom: "1em"}}>Some of my projects</Typography>
 			<ToggleButtonGroup
 				color="primary"
 				value={currFilter}
 				exclusive
 				onChange={handleChange}
 				aria-label="Platform"
+				className="hidden"
 			>
 				<ToggleButton value="All">All</ToggleButton>
 				<ToggleButton value="React">React</ToggleButton>
