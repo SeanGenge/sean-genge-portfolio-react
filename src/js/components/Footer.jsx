@@ -10,7 +10,7 @@ function Footer() {
 	const iconMargin = 0.2;
 	
 	return (
-		<Box className="separator-box" height="5rem" marginTop="5em">
+		<Box className="separator-box" height="5rem" marginTop="5em" paddingBottom="10em">
 			<Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
 				<Typography variant="body1" paragraph>
 					<Link href="mailto:seangenge@gmail.com" underline="none">

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import { importImages, observeAnimateOnScroll } from '../util/util';
 import projectData from '../projectData.js';
-import { Box, Typography, Container, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { Box, Typography, Container, ToggleButton, ToggleButtonGroup, Link } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 
 function ProjectsGrid() {
@@ -47,7 +47,13 @@ function ProjectsGrid() {
 	
 	return (
 		<Box textAlign="center" marginTop="5em">
-			<Typography variant="h3" className="hidden" sx={{marginBottom: "1em"}}>Some of my projects</Typography>
+			<Typography variant="h3" className="hidden" sx={{marginBottom: "0.25em"}}>Some of my projects</Typography>
+			<Typography variant="body2" className="hidden" sx={{ marginBottom: "2em" }} id="projects">
+				You can view more of my projects on my
+				<Link href="https://github.com/SeanGenge" target="_blank" underline="none" sx={{marginLeft: '0.3em'}}>
+					GitHub
+				</Link>
+			</Typography>
 			<ToggleButtonGroup
 				color="primary"
 				value={currFilter}
@@ -55,6 +61,7 @@ function ProjectsGrid() {
 				onChange={handleChange}
 				aria-label="Platform"
 				className="hidden"
+				
 			>
 				<ToggleButton value="All">All</ToggleButton>
 				<ToggleButton value="React">React</ToggleButton>

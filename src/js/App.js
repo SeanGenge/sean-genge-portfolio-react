@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
 import ProjectsGrid from './components/ProjectsGrid';
 import Footer from './components/Footer';
+import Navigation from './components/Navigation';
 import { ThemeProvider } from '@mui/material/styles';
 import { currTheme } from './theme';
 import { observeAnimateOnScroll } from "./util/util";
@@ -17,6 +18,7 @@ function App() {
 	
 	return (
 		<ThemeProvider theme={currTheme}>
+			<Navigation />
 			<Hero />
 			<AboutMe />
 			<ProjectsGrid />
