@@ -4,7 +4,7 @@ import CopyrightIcon from '@mui/icons-material/Copyright';
 
 function Footer() {
 	return (
-		<Box id="footer" className="separator-box" height="5rem" marginTop="5em" paddingBottom="10em">
+		<Box id="footer" className="separator-box" height="4rem" marginTop="5em" paddingBottom="5em">
 			<Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
 				<Typography variant="body1" paragraph>
 					Handcrafted by me using React. Hosted with AWS

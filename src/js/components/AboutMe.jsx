@@ -15,10 +15,10 @@ function AboutMe() {
 							Hi, I'm Sean. Nice to meet you
 						</Typography>
 						<Typography variant="body2" paragraph>
-							I enjoy programming and puzzles. With a computer science background, I have dabbled with lots of different programming lanugages. These range from C, Java, Python and C#. Later I came to learn web development and fell in love with it.
+							With a Computer Science background, I have played around with many different programming languages. These range from Python, C#, Java and C++. Later on I learnt web development and fell in love with it. I love the freedom of being able to design both the front-end and back-end and being able to have both work in harmony with one another.
 						</Typography>
 						<Typography variant="body2" paragraph>
-							I enjoy solving and finding innovative solutions to programming problems while also making sure the solutions are of decent speed without compromising the code quality.
+							Some of my hobbies include playing video games, these can include but are not limited to Final Fantasy 14, Left 4 dead 2, Team fortress 2 and osu!. I also enjoy playing and solving puzzles, for instance, the Rubik's cube or even something like an escape room. I love to just take strolls in nature and just let my mind process problems or plan what I would love to tackle next.
 						</Typography>
 					</Grid2>
 				</Grid2>
