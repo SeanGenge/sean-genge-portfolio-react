@@ -47,8 +47,8 @@ function ProjectsGrid() {
 	
 	return (
 		<Box textAlign="center" marginTop="5em">
-			<Typography variant="h3" className="hidden" sx={{marginBottom: "0.25em"}}>Some of my projects</Typography>
-			<Typography variant="body2" className="hidden" sx={{ marginBottom: "2em" }} id="projects">
+			<Typography variant="h3" className="hidden" sx={{marginBottom: "0.25em"}}>My Projects</Typography>
+			<Typography variant="body2" className="hidden" sx={{ marginBottom: "2em" }}>
 				You can view more of my projects on my
 				<Link href="https://github.com/SeanGenge" target="_blank" underline="none" sx={{marginLeft: '0.3em'}}>
 					GitHub
@@ -68,7 +68,7 @@ function ProjectsGrid() {
 				<ToggleButton value="Node.js">Node.js</ToggleButton>
 			</ToggleButtonGroup>
 			<Container>
-				<Grid2 container rowSpacing={2} className="no-margin">
+				<Grid2 id="projects" container rowSpacing={2} className="no-margin">
 					{projectCards}
 				</Grid2>
 			</Container>

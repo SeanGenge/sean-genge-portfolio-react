@@ -7,15 +7,15 @@ const projectData = [
 	//     "deployed": null,
 	//     "secondaryLanguages": ["React", "JavaScript", "TheMovieDB API", "HTML", "CSS", "Bootstrap", "SCSS", "Node.js"]
 	// },
-	{
-		"name": "Farmers Market Organisator",
-		"description": "Organize markets to rent out to stallholders or find products as a shopper",
-		"image": "farmersMarketOrganiser.png",
-		"github": "https://github.com/rschragger/Farmers-Market-Organiser",
-		"deployed": "https://farmers-market-organiser-app.herokuapp.com/",
-		"primaryLanguages": ["JavaScript", "express", "handlebar.js"],
-		"secondaryLanguages": ["HTML", "CSS", "Moment.js", "Bootstrap", "Multer", "validator.js", "heroku", "Node.js"]
-	},
+	// {
+	// 	"name": "Farmers Market Organisator",
+	// 	"description": "Organize markets to rent out to stallholders or find products as a shopper",
+	// 	"image": "farmersMarketOrganiser.png",
+	// 	"github": "https://github.com/rschragger/Farmers-Market-Organiser",
+	// 	"deployed": "https://farmers-market-organiser-app.herokuapp.com/",
+	// 	"primaryLanguages": ["JavaScript", "express", "handlebar.js"],
+	// 	"secondaryLanguages": ["HTML", "CSS", "Moment.js", "Bootstrap", "Multer", "validator.js", "heroku", "Node.js"]
+	// },
 	{
 		"name": "Github Readme Generator",
 		"description": "Simple UI for generating readme files",
@@ -61,14 +61,15 @@ const projectData = [
 		"primaryLanguages": ["React", "JavaScript", "Node.js"],
 		"secondaryLanguages": ["HTML", "Babel", "Webpack", "CSS"]
 	},
-	// {
-	//     "name": "Work day scheduler",
-	//     "description": "Add notes for today. Colour coded to see the current time",
-	//     "image": "WorkDayScheduler.png",
-	//     "github": "https://github.com/SeanGenge/Work-day-scheduler",
-	//     "deployed": "https://seangenge.github.io/Work-day-scheduler/",
-	//     "secondaryLanguages": ["HTML", "JavaScript", "CSS", "Moment.js", "Bootstrap"]
-	// }
+	{
+	    "name": "Work day scheduler",
+	    "description": "Add notes for today. Colour coded to see the current time",
+	    "image": "WorkDayScheduler.png",
+	    "github": "https://github.com/SeanGenge/Work-day-scheduler",
+	    "deployed": "https://seangenge.github.io/Work-day-scheduler/",
+		"primaryLanguages": ["JavaScript"],
+	    "secondaryLanguages": ["HTML", "CSS", "Moment.js", "Bootstrap"]
+	}
 ];
 
 export default projectData;

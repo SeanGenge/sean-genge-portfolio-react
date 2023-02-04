@@ -2,6 +2,7 @@
 	--primary-colour-list: 17, 52, 166;
 	--primary-colour: rgb(var(--primary-colour-list));
 	--box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+	--box-shadow-hover: 0 4px 6px 0 rgb(60 64 67 / 30%), 0 4px 9px 4px rgb(60 64 67 / 15%);
 }
 
 body, html {
@@ -9,10 +10,11 @@ body, html {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 #hero {
-	height: 100vh;
+	height: 90vh;
 	text-align: center;
 }
 
@@ -42,10 +44,6 @@ body, html {
 	padding: 0;
 }
 
-.test {
-	border: 1px solid blue;
-}
-
 .no-margin {
 	margin: 0 !important;
 }
@@ -56,6 +54,12 @@ body, html {
 
 .MuiCard-root {
 	box-shadow: var(--box-shadow) !important;
+}
+
+.MuiCard-root:hover {
+	box-shadow: var(--box-shadow-hover) !important;
+	transform: scale(1.005);
+	transition: all .25s ease-in-out;
 }
 
 .MuiCardMedia-root {
