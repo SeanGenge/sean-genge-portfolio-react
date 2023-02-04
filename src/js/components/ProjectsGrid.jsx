@@ -13,7 +13,7 @@ function ProjectsGrid() {
 	const [firstLoad, setFirstLoad] = useState(true);
 	
 	useEffect(() => {
-		setImages(importImages(require.context('../../../public/images/projects', false, /\.(png|jpe?g|svg)$/)));
+		setImages(importImages(require.context('../../../public/images/projects', false, /\.(png|jpe?g|svg|webp)$/)));
 		setFilteredProjects(projectData);
 	}, []);
 	
